@@ -1,0 +1,63 @@
+# macOS
+.DS_Store
+.AppleDouble
+._*           # cursor veya sistemin oluşturduğu ._ dosyaları
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.swiftpm/
+.build/
+
+# SwiftPM resolvers
+Package.resolved
+
+# Logs
+*.log
+
+# SwiftLint
+.swiftlint_cache
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/spaceship*
+
+# Carthage (SPM projesinde kullanılmıyor ama güvenli)
+Carthage/Build
+
+# CocoaPods (projende yoksa yine de ignore edilmesi iyi)
+Pods/
+Podfile.lock
+
+# Archives
+*.xcarchive
+
+# User-specific files
+*.swp
+*.swo
+*.idea
+*.iml
+*.hmap
+
+# Simulator
+CoreSimulator/
+CoreSimulator/**/*.lock
+CoreSimulator/**/*.sqlite
+CoreSimulator/**/*.log
