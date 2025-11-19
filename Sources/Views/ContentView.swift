@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct TestView: View {
     @State private var responseText: String = "Henüz istek yapılmadı."
 
     var body: some View {
@@ -46,4 +46,3 @@ struct ContentView: View {
         task.resume()
     }
 }
-
