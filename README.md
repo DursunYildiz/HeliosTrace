@@ -1,5 +1,10 @@
 # HeliosTrace
 
+<p align="center">
+  <img src="Sources/Resources/Media.xcassets/HeliosTraceLogo.imageset/logo.png" alt="HeliosTrace Logo" width="200"/>
+</p>
+
+
 HeliosTrace is a powerful network debugging and tracing tool for iOS. It allows developers to monitor HTTP/HTTPS network traffic, capture logs, and debug their applications directly from the device.
 
 ## Features

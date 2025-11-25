@@ -19,12 +19,6 @@ public struct TabbarView: View {
 
     public var body: some View {
         TabView {
-//            TestView()
-//                .tabItem {
-//                    Image(systemName: "house.fill")
-//                    Text("Home")
-//                }
-
 //            LogsTabView()
 //                .tabItem {
 //                    Image(systemName: "doc.text.magnifyingglass")

@@ -62,8 +62,11 @@ struct NetworkDetailView: View {
                     DetailField(label: "MIME TYPE", value: mimeType)
                 }
             }
-            .padding()
+            .padding(.vertical)
+            .padding(.horizontal, 24)
+            .frame(maxWidth: .infinity)
         }
+
         .navigationTitle("Detail")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -153,6 +156,7 @@ private struct DetailField: View {
                 Label("Copy Field", systemImage: "clipboard")
             }
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 
     private func copyToPasteboard(_ text: String) {
@@ -162,3 +166,28 @@ private struct DetailField: View {
     }
 }
 
+// MARK: - Preview
+
+struct NetworkDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        let mockModel = HttpModel(
+            url: URL(string: "https://api.example.com/v1/users"),
+            requestData: "{\"username\": \"test\"}".data(using: .utf8),
+            responseData: "{\"id\": 1, \"name\": \"Test User\"}".data(using: .utf8),
+            requestId: "12345",
+            method: "POST",
+            statusCode: "200",
+            mimeType: "application/json",
+            startTime: "0 ms",
+            endTime: "150 ms",
+            totalDuration: "150 ms",
+            requestHeaderFields: ["Content-Type": "application/json"],
+            responseHeaderFields: ["Content-Type": "application/json", "Date": "Tue, 11 Nov 2025 10:00:00 GMT"],
+            size: "1.2 KB"
+        )
+
+        NavigationView {
+            NetworkDetailView(model: mockModel, allModels: [mockModel])
+        }
+    }
+}

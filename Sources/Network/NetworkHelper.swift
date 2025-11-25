@@ -46,12 +46,14 @@ final class NetworkHelper {
         guard !isNetworkEnable else { return }
         isNetworkEnable = true
         CustomHTTPProtocol.start()
+        URLSession.enableHeliosTraceSwizzling()
     }
 
     func disable() {
         guard isNetworkEnable else { return }
         isNetworkEnable = false
         CustomHTTPProtocol.stop()
+        URLSession.disableHeliosTraceSwizzling()
     }
 }
 extension UIColor {

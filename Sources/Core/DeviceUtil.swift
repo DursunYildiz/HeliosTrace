@@ -66,6 +66,15 @@ public enum Hardware: String {
     case IPHONE_14_PLUS
     case IPHONE_14_PRO
     case IPHONE_14_PRO_MAX
+    case IPHONE_15
+    case IPHONE_15_PLUS
+    case IPHONE_15_PRO
+    case IPHONE_15_PRO_MAX
+    case IPHONE_16
+    case IPHONE_16_PLUS
+    case IPHONE_16_PRO
+    case IPHONE_16_PRO_MAX
+    case IPHONE_16E
 
     case IPOD_TOUCH_1G
     case IPOD_TOUCH_2G
@@ -144,6 +153,8 @@ public enum Hardware: String {
     case IPAD_PRO_5_WIFI
     case IPAD_MINI_6_WIFI
     case IPAD_MINI_6_WIFI_CELLULAR
+    case IPAD_PRO_11_M4
+    case IPAD_PRO_13_M4
 
     case APPLE_WATCH_38
     case APPLE_WATCH_42
@@ -163,6 +174,9 @@ public enum Hardware: String {
     case APPLE_WATCH_SERIES_5_44
     case APPLE_WATCH_SERIES_5_40_CELLULAR
     case APPLE_WATCH_SERIES_5_44_CELLULAR
+    case APPLE_WATCH_SERIES_9
+    case APPLE_WATCH_SERIES_10
+    case APPLE_WATCH_ULTRA_2
 
     case APPLE_TV_1G
     case APPLE_TV_2G
@@ -279,6 +293,34 @@ public class DeviceUtil {
                 "name": "Apple Watch Series 5 (44 mm/Cellular)",
                 "version": "5.4",
             ],
+            "Watch7,3": [
+                "name": "Apple Watch Series 9 (41mm)",
+                "version": "7.3",
+            ],
+            "Watch7,4": [
+                "name": "Apple Watch Series 9 (45mm)",
+                "version": "7.4",
+            ],
+            "Watch7,5": [
+                "name": "Apple Watch Ultra 2",
+                "version": "7.5",
+            ],
+            "Watch7,8": [
+                "name": "Apple Watch Series 10 (42mm)",
+                "version": "7.8",
+            ],
+            "Watch7,9": [
+                "name": "Apple Watch Series 10 (46mm)",
+                "version": "7.9",
+            ],
+            "Watch7,10": [
+                "name": "Apple Watch Series 10 (42mm/Cellular)",
+                "version": "7.10",
+            ],
+            "Watch7,11": [
+                "name": "Apple Watch Series 10 (46mm/Cellular)",
+                "version": "7.11",
+            ],
             "i386": [
                 "name": "Simulator",
                 "version": "-1",
@@ -370,6 +412,22 @@ public class DeviceUtil {
             "iPad14,2": [
                 "name": "iPad Mini 6 (Wi-Fi + Cellular)",
                 "version": "14.2",
+            ],
+            "iPad16,3": [
+                "name": "iPad Pro 11-inch (M4)",
+                "version": "16.3",
+            ],
+            "iPad16,4": [
+                "name": "iPad Pro 11-inch (M4)",
+                "version": "16.4",
+            ],
+            "iPad16,5": [
+                "name": "iPad Pro 13-inch (M4)",
+                "version": "16.5",
+            ],
+            "iPad16,6": [
+                "name": "iPad Pro 13-inch (M4)",
+                "version": "16.6",
             ],
             "iPad2,1": [
                 "name": "iPad 2 (WiFi)",
@@ -694,6 +752,42 @@ public class DeviceUtil {
             "iPhone15,3": [
                 "name": "iPhone 14 Pro Max",
                 "version": "15.3",
+            ],
+            "iPhone15,4": [
+                "name": "iPhone 15",
+                "version": "15.4",
+            ],
+            "iPhone15,5": [
+                "name": "iPhone 15 Plus",
+                "version": "15.5",
+            ],
+            "iPhone16,1": [
+                "name": "iPhone 15 Pro",
+                "version": "16.1",
+            ],
+            "iPhone16,2": [
+                "name": "iPhone 15 Pro Max",
+                "version": "16.2",
+            ],
+            "iPhone17,1": [
+                "name": "iPhone 16 Pro",
+                "version": "17.1",
+            ],
+            "iPhone17,2": [
+                "name": "iPhone 16 Pro Max",
+                "version": "17.2",
+            ],
+            "iPhone17,3": [
+                "name": "iPhone 16",
+                "version": "17.3",
+            ],
+            "iPhone17,4": [
+                "name": "iPhone 16 Plus",
+                "version": "17.4",
+            ],
+            "iPhone17,5": [
+                "name": "iPhone 16e",
+                "version": "17.5",
             ],
             "iPhone2,1": [
                 "name": "iPhone 3GS",
