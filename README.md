@@ -7,6 +7,13 @@
 
 HeliosTrace is a powerful network debugging and tracing tool for iOS. It allows developers to monitor HTTP/HTTPS network traffic, capture logs, and debug their applications directly from the device.
 
+## Screenshots
+
+<p align="center">
+  <img src="Assets/network_list.png" width="45%" />
+  <img src="Assets/sandbox_files.png" width="45%" />
+</p>
+
 ## Features
 
 - **Network Monitoring**: Capture and inspect HTTP/HTTPS requests and responses.
@@ -32,6 +39,14 @@ You can install HeliosTrace using [Swift Package Manager](https://swift.org/pack
 1. In Xcode, go to **File > Add Packages...**
 2. Enter the repository URL: `https://github.com/DursunYildiz/HeliosTrace` (Replace with actual URL if different)
 3. Select the version you want to use.
+
+Or add it to your `Package.swift` file:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/DursunYildiz/HeliosTrace.git", branch: "main")
+]
+```
 
 ## Usage
 
