@@ -153,7 +153,7 @@ private struct SandboxItemRow: View {
 
     @ViewBuilder
     private var icon: some View {
-        Image(item.icon, bundle: .module)
+        Image(item.icon, bundle: HeliosTrace.bundle)
             .resizable()
             .scaledToFit()
             .clipShape(RoundedRectangle(cornerRadius: 4))
