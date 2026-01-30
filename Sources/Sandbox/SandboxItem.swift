@@ -65,9 +65,9 @@ struct SandboxItem: Identifiable, Hashable {
         }
     }
 
-    var icon: ImageResource {
+    var icon: String {
         if isDirectory && childCount == 0 {
-            return .iconFileTypeFolderEmpty
+            return "icon_file_type_folder_empty"
         }
         return type.icon
     }
