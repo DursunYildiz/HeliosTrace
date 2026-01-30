@@ -134,106 +134,106 @@ extension SandboxFileType {
         self = .unknown
     }
 
-    var icon: ImageResource {
+    var icon: String {
         switch self {
         case .unknown:
-            return .iconFileTypeDefault
+            return "icon_file_type_default"
 
         case .directory:
-            return .iconFileTypeFolderNotEmpty
+            return "icon_file_type_folder_not_empty"
 
         case .image(let kind):
             switch kind {
-            case .jpg: return .iconFileTypeJpg
-            case .png: return .iconFileTypePng
-            case .gif: return .iconFileTypeGif
-            case .svg: return .iconFileTypeSvg
-            case .bmp: return .iconFileTypeBmp
-            case .tif: return .iconFileTypeTif
+            case .jpg: return "icon_file_type_jpg"
+            case .png: return "icon_file_type_png"
+            case .gif: return "icon_file_type_gif"
+            case .svg: return "icon_file_type_svg"
+            case .bmp: return "icon_file_type_bmp"
+            case .tif: return "icon_file_type_tif"
             }
 
         case .audio(let kind):
             switch kind {
-            case .mp3: return .iconFileTypeMp3
-            case .aac: return .iconFileTypeAac
-            case .wav: return .iconFileTypeWav
-            case .ogg: return .iconFileTypeOgg
+            case .mp3: return "icon_file_type_mp3"
+            case .aac: return "icon_file_type_aac"
+            case .wav: return "icon_file_type_wav"
+            case .ogg: return "icon_file_type_ogg"
             }
 
         case .video(let kind):
             switch kind {
-            case .mp4: return .iconFileTypeMp4
-            case .avi: return .iconFileTypeAvi
-            case .flv: return .iconFileTypeFlv
-            case .midi: return .iconFileTypeMidi
-            case .mov: return .iconFileTypeMov
-            case .mpg: return .iconFileTypeMpg
-            case .wmv: return .iconFileTypeWmv
+            case .mp4: return "icon_file_type_mp4"
+            case .avi: return "icon_file_type_avi"
+            case .flv: return "icon_file_type_flv"
+            case .midi: return "icon_file_type_midi"
+            case .mov: return "icon_file_type_mov"
+            case .mpg: return "icon_file_type_mpg"
+            case .wmv: return "icon_file_type_wmv"
             }
 
         case .apple(let kind):
             switch kind {
-            case .dmg: return .iconFileTypeDmg
-            case .ipa: return .iconFileTypeIpa
-            case .numbers: return .iconFileTypeNumbers
-            case .pages: return .iconFileTypePages
-            case .key: return .iconFileTypeKeynote
+            case .dmg: return "icon_file_type_dmg"
+            case .ipa: return "icon_file_type_ipa"
+            case .numbers: return "icon_file_type_numbers"
+            case .pages: return "icon_file_type_pages"
+            case .key: return "icon_file_type_keynote"
             }
 
         case .google:
-            return .iconFileTypeApk
+            return "icon_file_type_apk"
 
         case .microsoft(let kind):
             switch kind {
-            case .doc, .docx: return .iconFileTypeDoc
-            case .xls, .xlsx: return .iconFileTypeXls
-            case .ppt, .pptx: return .iconFileTypePpt
-            case .exe: return .iconFileTypeDefault
-            case .dll: return .iconFileTypeDll
+            case .doc, .docx: return "icon_file_type_doc"
+            case .xls, .xlsx: return "icon_file_type_xls"
+            case .ppt, .pptx: return "icon_file_type_ppt"
+            case .exe: return "icon_file_type_default"
+            case .dll: return "icon_file_type_dll"
             }
 
         case .document(let kind):
             switch kind {
-            case .txt: return .iconFileTypeTxt
-            case .rtf: return .iconFileTypeDefault
-            case .pdf: return .iconFileTypePdf
-            case .zip: return .iconFileTypeZip
-            case ._7z: return .iconFileType7Z
-            case .csv: return .iconFileTypeDefault
-            case .md: return .iconFileTypeMd
+            case .txt: return "icon_file_type_txt"
+            case .rtf: return "icon_file_type_default"
+            case .pdf: return "icon_file_type_pdf"
+            case .zip: return "icon_file_type_zip"
+            case ._7z: return "icon_file_type_7z"
+            case .csv: return "icon_file_type_default"
+            case .md: return "icon_file_type_md"
             }
 
         case .programming(let kind):
             switch kind {
-            case .swift: return .iconFileTypeSwift
-            case .java: return .iconFileTypeJava
-            case .c: return .iconFileTypeDefault
-            case .cpp: return .iconFileTypeDefault
-            case .php: return .iconFileTypePhp
-            case .json: return .iconFileTypeJson
-            case .plist: return .iconFileTypePlist
-            case .xml: return .iconFileTypeXml
-            case .db: return .iconFileTypeDb
-            case .js: return .iconFileTypeJs
-            case .html: return .iconFileTypeHtml
-            case .css: return .iconFileTypeCss
-            case .bin: return .iconFileTypeBin
-            case .dat: return .iconFileTypeDat
-            case .sql: return .iconFileTypeSql
-            case .jar: return .iconFileTypeJar
+            case .swift: return "icon_file_type_swift"
+            case .java: return "icon_file_type_java"
+            case .c: return "icon_file_type_default"
+            case .cpp: return "icon_file_type_default"
+            case .php: return "icon_file_type_php"
+            case .json: return "icon_file_type_json"
+            case .plist: return "icon_file_type_plist"
+            case .xml: return "icon_file_type_xml"
+            case .db: return "icon_file_type_db"
+            case .js: return "icon_file_type_js"
+            case .html: return "icon_file_type_html"
+            case .css: return "icon_file_type_css"
+            case .bin: return "icon_file_type_bin"
+            case .dat: return "icon_file_type_dat"
+            case .sql: return "icon_file_type_sql"
+            case .jar: return "icon_file_type_jar"
             }
 
         case .adobe(let kind):
             switch kind {
-            case .fla: return .iconFileTypeFla
-            case .psd: return .iconFileTypePsd
-            case .eps: return .iconFileTypeEps
+            case .fla: return "icon_file_type_fla"
+            case .psd: return "icon_file_type_psd"
+            case .eps: return "icon_file_type_eps"
             }
 
         case .other(let kind):
             switch kind {
-            case .ttf: return .iconFileTypeTtf
-            case .torrent: return .iconFileTypeTorrent
+            case .ttf: return "icon_file_type_ttf"
+            case .torrent: return "icon_file_type_torrent"
             }
         }
     }
