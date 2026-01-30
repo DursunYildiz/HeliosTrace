@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 struct NetworkView: View {
     @Environment(\.safeDismiss) private var dismiss
