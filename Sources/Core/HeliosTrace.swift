@@ -29,6 +29,21 @@ import UIKit
     @objc public static var mainColor: String = "#42d459"
     /// protobuf url and response class transfer map. Default value is `nil`.
     @objc public static var protobufTransferMap: [String: [String]]?
+    
+    /// set true if the project is built with Tuist. Default value is `false`.
+    @objc public static var isTuistProject: Bool = false
+    
+    @objc public static var bundle: Bundle {
+        if isTuistProject {
+            return Bundle(for: HeliosTrace.self)
+        }
+        
+        #if SWIFT_PACKAGE
+        return Bundle.module
+        #else
+        return Bundle(for: HeliosTrace.self)
+        #endif
+    }
 
     // MARK: - HeliosTrace enable
 
