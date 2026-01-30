@@ -8,7 +8,7 @@
 import Foundation
 
 extension Bundle {
-    static var heliosTrace: Bundle {
+    static var module: Bundle {
         return Bundle(for: HeliosTrace.self)
     }
 }

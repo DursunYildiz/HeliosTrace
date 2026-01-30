@@ -73,7 +73,7 @@ struct SandboxItem: Identifiable, Hashable {
     }
 
     var canPreviewInQuickLook: Bool {
-        #if canImport(QuickLook)
+        #if canImport(QuickLook) && os(iOS)
             return QLPreviewController.canPreview(url as NSURL)
         #else
             return false
