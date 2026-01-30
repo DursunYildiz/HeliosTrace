@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
 
 /// A wrapper to provide backward compatibility for dismissing views.
 struct DismissHandler {
